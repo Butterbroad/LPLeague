@@ -1,0 +1,149 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  // .hero__wrapper
+
+  &__wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .hero__columns
+
+  &__columns {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  // .hero__column
+
+  &__column {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 98px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // .hero__title
+
+  &__title {
+    max-width: 670px;
+    width: 100%;
+  }
+
+  // .hero__logos
+
+  &__logos {
+    max-width: 670px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  // .hero__logo
+
+  &__logo {
+    
+  }
+
+  // .hero__bonus
+
+  &__bonus {
+    max-width: 670px;
+    width: 100%;
+  }
+
+  // .hero__img
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  // .hero__info
+
+  &__info {
+  }
+}
+.info {
+
+  // .info__btn
+
+  &__btn {
+  }
+
+  // .info__learn
+
+  &__learn {
+  }
+
+  // .info__modal
+
+  &__modal {
+  }
+}
+.btn {
+
+  // .btn_red
+
+  &_red {
+  }
+
+  // .btn_green
+
+  &_green {
+  }
+}
+.modal-info {
+  display: none;
+  // .modal-info__close
+
+  &__close {
+  }
+
+  // .modal-info__title
+
+  &__title {
+  }
+
+  // .modal-info__list
+
+  &__list {
+  }
+
+  // .modal-info__btn
+
+  &__btn {
+  }
+}
+.info-list {
+
+  // .info-list__item
+
+  &__item {
+  }
+
+  // .info-list__num
+
+  &__num {
+  }
+}

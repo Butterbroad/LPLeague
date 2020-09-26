@@ -1,0 +1,34 @@
+.header {
+  position: relative;
+  z-index: 2;
+  // .header__wrapper
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 69px;
+    @media (max-width: 1440px) {
+      padding-top: 41px;
+    }
+    @media (max-width: 590px) {
+      padding-top: 24px;
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    flex: 0 1 288px;
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    @media (max-width: 1440px) {
+      flex: 0 1 226px;
+    }
+    @media (max-width: 590px) {
+      flex: 0 1 140px;
+    }
+  }
+}
