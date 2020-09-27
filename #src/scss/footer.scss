@@ -1,6 +1,15 @@
 .footer {
   z-index: 2;
   position: relative;
+  transition: all .6s ease;
+  
+  &.active {
+    transform: translateY(0);
+  }
+
+  @media (min-height: 700px) {
+    transform: translateY(-330%);
+  }
   // .footer__wrapper
 
   &__wrapper {
@@ -11,8 +20,8 @@
     @media (max-width: 1440px) {
       padding-bottom: 23px;
     }
-    @media (max-width: 1024px) {
-      padding-bottom: 40px;
+    @media (max-width: 990px) {
+      padding-bottom: 41px;
     }
   }
 

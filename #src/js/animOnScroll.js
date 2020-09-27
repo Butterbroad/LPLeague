@@ -2,6 +2,7 @@
 
 const animItems = document.querySelectorAll('.anim-item');
 
+
 if (animItems.length > 0) {
 
     window.addEventListener('scroll', animOnScroll);
@@ -37,6 +38,8 @@ if (animItems.length > 0) {
 
     setTimeout(() => {
         animOnScroll();
-    }, 300);
+    }, 700);
 }
+
+
 

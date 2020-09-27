@@ -1,6 +1,15 @@
 .header {
   position: relative;
   z-index: 2;
+  transition: all .6s ease;
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  @media (min-height: 700px) {
+    transform: translateY(230%);
+  }
   // .header__wrapper
 
   &__wrapper {
@@ -9,7 +18,7 @@
     align-items: center;
     padding-top: 69px;
     @media (max-width: 1440px) {
-      padding-top: 41px;
+      padding-top: 35px;
     }
     @media (max-width: 590px) {
       padding-top: 24px;
