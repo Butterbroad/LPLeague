@@ -1188,6 +1188,51 @@ input:focus::placeholder {
   }
 }
 
+@media (max-height: 900px) {
+  .hero__img {
+    max-width: 640px;
+    right: 260px;
+  }
+}
+
+@media (min-height: 1025px) {
+  .hero__img {
+    min-width: 1100px;
+    right: 50px;
+  }
+
+  .hero__img img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-height: 1201px) {
+  .hero__img {
+    min-width: 1200px;
+    right: 20px;
+  }
+
+  .hero__img img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-height: 1366px) {
+  .hero__img {
+    min-width: 1200px;
+    right: -100px;
+  }
+}
+
+@media (min-height: 1440px) {
+  .hero__img {
+    min-width: 1400px;
+    right: -40px;
+  }
+}
+
 .webp .hero::before { background-image: url(../img/main-shadow.webp); }
 
 @media (max-width: 1440px) {

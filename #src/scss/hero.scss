@@ -276,6 +276,34 @@
     &.active {
       opacity: 1;
     }
+    @media (max-height: 900px) {
+      max-width: 640px;
+      right: 260px;
+    }
+    @media (min-height: 1025px) {
+      min-width: 1100px;
+      right: 50px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    @media (min-height: 1201px) {
+      min-width: 1200px;
+      right: 20px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    @media (min-height: 1366px) {
+      min-width: 1200px;
+      right: -100px;
+    }
+    @media (min-height: 1440px) {
+      min-width: 1400px;
+      right: -40px;
+    }
     @media (max-width: 1440px) {
       max-width: 700px;
       bottom: -60px;
@@ -294,11 +322,6 @@
     }
   }
 
-  // .hero__info
-
-  &__info {
-    
-  }
 }
 .info {
   max-width: 725px;
@@ -361,11 +384,6 @@
       background-size: cover;
       background-position: center;
     }
-  }
-
-  // .info__modal
-
-  &__modal {
   }
 }
 .btn {
@@ -472,11 +490,6 @@
     @media (max-width: 550px) {
       right: 0;
     }
-  }
-
-  // .modal-info__list
-
-  &__list {
   }
 
   // .modal-info__btn
