@@ -439,13 +439,26 @@
     left: -130px;
   }
   @media (max-width: 990px) {
-    left: -130px;
+    left: 0;
+    max-width: 600px;
+  }
+  @media (max-width: 660px) {
+    left: -100px;
+    max-width: 500px;
+    max-height: 400px;
+  }
+  @media (max-width: 550px) {
+    max-width: 310px;
+    left: -5px;
   }
   // .modal-info__wrapper
   &__wrapper {
     overflow: hidden;
     height: 550px;
     padding: 31px 0 6px;
+    @media (max-width: 660px) {
+      height: 400px;
+    }
   }
   // .modal-info__close
 
@@ -455,7 +468,10 @@
     position: absolute;
     top: -15px;
     right: -15px;
-    cursor: pointer
+    cursor: pointer;
+    @media (max-width: 550px) {
+      right: 0;
+    }
   }
 
   // .modal-info__list
@@ -468,6 +484,9 @@
   &__btn {
     color: #000;
     margin: 0 auto 64px;
+    @media (max-width: 990px) {
+      margin: 0 auto 31px;
+    }
   }
 }
 .info-list {
@@ -484,6 +503,15 @@
   &::-webkit-scrollbar-thumb {
     background-color: #129A48;
   }
+  @media (max-width: 990px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @media (max-width: 550px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
   // .info-list__title
 
   &__title {
@@ -491,6 +519,12 @@
     text-transform: uppercase;
     margin-bottom: 40px;
     font-family: "SFProDisplay-Semibold", sans-serif;
+    @media (max-width: 990px) {
+      padding-left: 61px;
+    }
+    @media (max-width: 550px) {
+    font-size: 19px;
+    }
   }
   // .info-list__item
 
@@ -524,6 +558,24 @@
       font-family: "SFProDisplay-Light", sans-serif;
       color: #129A48;
     }
+    @media (max-width: 990px) {
+      padding-left: 61px;
+      max-width: 500px;
+      p {
+        margin: 0 0 20px 0;
+      }
+      &_2 {
+        .info-list__num {
+          top: 10px;
+        }
+      }
+    }
+    @media (max-width: 660px) {
+      max-width: 440px;
+    }
+    @media (max-width: 550px) {
+      max-width: 265px;
+    }
   }
    // .info-list__link
    &__link {
@@ -540,6 +592,15 @@
     text-align: center;
     font-size: 48px;
     letter-spacing: -0.045em;
+    color: #000 !important;
     font-family: "SFProDisplay-Semibold", sans-serif;
+    @media (max-width: 990px) {
+      left: 20px;
+      font-size: 36px;
+    }
+    @media (max-width: 550px) {
+      font-size: 36.8px;
+      line-height: 44px;
+    }
   }
 }

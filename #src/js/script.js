@@ -1,3 +1,4 @@
+'use strict'
 const infoBtn = document.querySelector('.info__learn');
 const modalInfo = document.querySelector('.modal-info');
 const modalInfoClose = document.querySelector('.modal-info__close');
