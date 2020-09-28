@@ -30,6 +30,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "SFProDisplay-Semibold";
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/SFProDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProDisplay-Bold";
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -152,9 +168,9 @@ input:focus::placeholder {
 .header {
   position: relative;
   z-index: 2;
-  -webkit-transition: all .8s ease-in-out;
-  -o-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
 }
 
 .header.active {
@@ -553,19 +569,141 @@ input:focus::placeholder {
   text-shadow: 0px 5.42544px 7.23391px rgba(0, 0, 0, 0.2);
 }
 
+.btn_green {
+  background: -o-linear-gradient(178.66deg, rgba(10, 88, 30, 0.8) 2.08%, rgba(10, 159, 48, 0) 89.51%), #0A9F30;
+  background: linear-gradient(271.34deg, rgba(10, 88, 30, 0.8) 2.08%, rgba(10, 159, 48, 0) 89.51%), #0A9F30;
+  -webkit-box-shadow: 0px 0px 15px #3BB259;
+          box-shadow: 0px 0px 15px #3BB259;
+  font-size: 26px;
+  line-height: 31px;
+  height: 71px;
+  max-width: 405px;
+  font-family: "SFProDisplay-Bold", sans-serif;
+  padding-bottom: 5px;
+  color: #fff !important;
+}
+
 .modal-info {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -85px;
+  background-color: #fff;
+  z-index: 10;
+  width: 890px;
+  max-height: 550px;
+}
+
+.modal-info.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-info__wrapper {
+  overflow: hidden;
+  height: 550px;
+  padding: 31px 0 6px;
+}
+
+.modal-info__close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  cursor: pointer;
+}
+
+.modal-info__btn {
+  color: #000;
+  margin: 0 auto 64px;
+}
+
+.info-list {
+  overflow-y: auto;
+  margin-right: 8px;
+  height: 100%;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.045em;
+}
+
+.info-list::-webkit-scrollbar {
+  background-color: #C4C4C4;
+  width: 3px;
+}
+
+.info-list::-webkit-scrollbar-thumb {
+  background-color: #129A48;
+}
+
+.info-list__title {
+  padding-left: 87px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-family: "SFProDisplay-Semibold", sans-serif;
+}
+
+.info-list__item {
+  position: relative;
+  padding-left: 81px;
+  margin-bottom: 35px;
+  min-height: 34px;
+  max-width: 745px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+}
+
+.info-list__item_1 .info-list__num {
+  top: 15px;
+}
+
+.info-list__item_3 .info-list__num {
+  top: 15px;
+}
+
+.info-list__item p {
+  margin: 0 0 35px 0;
+}
+
+.info-list__item p:last-child {
+  margin-bottom: 0;
+}
+
+.info-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.info-list__item span {
+  font-family: "SFProDisplay-Light", sans-serif;
+  color: #129A48;
+}
+
+.info-list__link {
+  color: #129A48;
+  font-family: "SFProDisplay-Light", sans-serif;
+  text-decoration: underline;
+}
+
+.info-list__num {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: -0.045em;
+  font-family: "SFProDisplay-Semibold", sans-serif;
 }
 
 .footer {
   z-index: 2;
   position: relative;
-  -webkit-transition: all .8s ease-in-out;
-  -o-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
 }
 
 .footer.active {
@@ -748,6 +886,10 @@ input:focus::placeholder {
     font-size: 32px;
   }
 
+  .modal-info {
+    left: -130px;
+  }
+
   .footer__wrapper {
     padding-bottom: 23px;
   }
@@ -808,6 +950,10 @@ input:focus::placeholder {
 
   .info {
     margin-top: 18px;
+  }
+
+  .modal-info {
+    left: -130px;
   }
 
   .footer__wrapper {
