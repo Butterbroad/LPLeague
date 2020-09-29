@@ -394,10 +394,24 @@
     font-size: 21px;
     line-height: 26px;
     letter-spacing: -0.05em;
-    text-decoration: underline;
     color: #fff;
     cursor: pointer;
     font-family: "Gilroy-Bold", sans-serif;
+    &:hover {
+      &::after {
+        opacity: 0;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 183px;
+      height: 1px;
+      background-color: #fff;
+      bottom: 3px;
+      right: 0;
+      transition: all .3s ease;
+    }
 
     &::before {
       content: '';
@@ -501,6 +515,8 @@
   font-size: 26px;
   line-height: 31px;
   letter-spacing: -0.045em;
+  scrollbar-color: #458245 #C4C4C4;
+  scrollbar-width: thin;
   &::-webkit-scrollbar {
     background-color: #C4C4C4;
     width: 3px;
@@ -584,6 +600,21 @@
   }
    // .info-list__link
    &__link {
+    color: #129A48;
+    font-family: "SFProDisplay-Light", sans-serif;
+    text-decoration: underline;
+    &_md {
+      display: none;
+    }
+    @media (max-width: 1024px) {
+      display: none;
+      &_md {
+        display: inline-block;
+      }
+    }
+   }
+   // .info-list__mail
+   &__mail {
     color: #129A48;
     font-family: "SFProDisplay-Light", sans-serif;
     text-decoration: underline;
