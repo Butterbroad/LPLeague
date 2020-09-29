@@ -102,6 +102,7 @@
     font-style: italic;
     line-height: 90px;
     text-align: left;
+    text-transform: uppercase;
     text-shadow: 0px 5.95694px 7.14833px rgba(0, 0, 0, 0.6);
     span {
       font-size: 101px;
@@ -472,6 +473,9 @@
     &_md {
       display: none;
     }
+    @media (max-width: 1440px) {
+      max-width: 400px;
+    }
     @media (max-width: 1024px) {
       display: none;
       &_md {
@@ -480,6 +484,10 @@
     }
     @media (max-width: 990px) {
       margin: 0 auto 31px;
+    }
+    @media (max-width: 660px) {
+      max-width: 258px;
+      font-size: 18px;
     }
   }
 }

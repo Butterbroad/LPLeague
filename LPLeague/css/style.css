@@ -191,6 +191,7 @@ input:focus::placeholder {
       -ms-transform: skewX(-10deg);
           transform: skewX(-10deg);
   padding-top: 5px;
+  text-transform: uppercase;
 }
 
 .btn_red {
@@ -400,6 +401,7 @@ input:focus::placeholder {
   font-style: italic;
   line-height: 90px;
   text-align: left;
+  text-transform: uppercase;
   text-shadow: 0px 5.95694px 7.14833px rgba(0, 0, 0, 0.6);
   -webkit-transform: translateX(-300%);
       -ms-transform: translateX(-300%);
@@ -937,6 +939,10 @@ input:focus::placeholder {
     left: -130px;
   }
 
+  .modal-info__btn {
+    max-width: 400px;
+  }
+
   .footer__wrapper {
     padding-bottom: 23px;
   }
@@ -1170,6 +1176,11 @@ input:focus::placeholder {
 
   .modal-info__wrapper {
     height: 400px;
+  }
+
+  .modal-info__btn {
+    max-width: 258px;
+    font-size: 18px;
   }
 
   .info-list__item {

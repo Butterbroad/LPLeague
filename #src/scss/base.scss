@@ -104,7 +104,8 @@ input {
     transition: all .3s ease;
     transform: skewX(-10deg);
     padding-top: 5px;
-  
+    text-transform: uppercase;
+    
     @media (max-width: 1440px) {
       max-width: 323px;
       height: 63px;
