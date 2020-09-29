@@ -2,14 +2,29 @@
   z-index: 1;
   position: relative;
   transition: all .6s ease-in-out;
-  
-  &.active {
-    transform: translateY(0);
-  }
 
-  @media (min-height: 700px) {
-    transform: translateY(-330%);
+  @media (min-height: 480px) {
+    transform: translateY(-240%);
   }
+  @media (min-height: 768px) {
+    transform: translateY(-300%);
+  }
+  @media (min-height: 812px) {
+    transform: translateY(-240%);
+  }
+  @media (min-height: 960px) {
+    transform: translateY(-380%);
+  }
+  @media (min-height: 1200px) {
+    transform: translateY(-500%) !important;
+  }
+  @media (min-height: 1366px) {
+    transform: translateY(-700%) !important;
+  }
+  &.active {
+    transform: translateY(0) !important;
+  }
+  
   // .footer__wrapper
 
   &__wrapper {

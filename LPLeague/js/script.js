@@ -1,3 +1,4 @@
+'use strict'
 const infoBtn = document.querySelector('.info__learn');
 const modalInfo = document.querySelector('.modal-info');
 const modalInfoClose = document.querySelector('.modal-info__close');
@@ -13,7 +14,6 @@ modalInfoClose.addEventListener('click', () => {
 
 
 
-'use strict';
 
 const animItems = document.querySelectorAll('.anim-item');
 
@@ -56,21 +56,7 @@ if (animItems.length > 0) {
     }, 700);
 }
 
-// function msieversion() {
 
-//     var ua = window.navigator.userAgent;
-//     var msie = ua.indexOf("MSIE ");
-
-//     if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
-//     {
-//       alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
-//       alert('ie');
-//     } else {
-//       alert('ne ie');
-//     }
-//     return false;
-//   }
-//   msieversion();
 
 
 function testWebP(callback) {
