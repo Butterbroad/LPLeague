@@ -277,7 +277,7 @@
     }
 
     
-    @media (min-height: 1025px) {
+    @media (min-height: 1081px) {
       min-width: 700px;
       right: 50px;
       img {
@@ -308,6 +308,9 @@
     @media (min-height: 1440px) {
       min-width: 1400px;
       right: -40px;
+    }
+    @media (max-width: 1920px) {
+      right: 160px;
     }
     @media (max-width: 1600px) {
       max-width: 700px;
