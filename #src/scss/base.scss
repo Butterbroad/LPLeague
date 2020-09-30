@@ -142,5 +142,14 @@ input {
       font-family: "SFProDisplay-Bold", sans-serif;
       padding-bottom: 5px;
       color: #fff !important;
+      span {
+          transform: skew(10deg);
+      }
+      @media (max-width: 1440px) {
+        max-width: 323px;
+        height: 63px;
+        font-size: 28px;
+      }
+     
     }
   }
