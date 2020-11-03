@@ -1,21 +1,31 @@
 'use strict'
-const infoBtn = document.querySelector('.info__learn');
-const modalInfo = document.querySelector('.modal-info');
-const modalInfoClose = document.querySelector('.modal-info__close');
-const footer = document.querySelector('.footer');
 
-infoBtn.addEventListener('click', () => {
-  modalInfo.classList.add('active');
+const modalTrigger = document.querySelector('.info__learn');
 
-  (window.innerWidth < 768) ? footer.style.display = 'none' : null;
+
+modalTrigger.addEventListener('click', () => {
+  const footer = document.querySelector('.footer');
+  const modal = document.querySelector('.modal');
+  modal.classList.add('active');
+  footer.style.display = 'none';
+
+  const modalClose = document.querySelector('.modal-info__close');
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+    footer.style.display = 'block';
+  });
+
 });
 
-modalInfoClose.addEventListener('click', () => {
-  modalInfo.classList.remove('active');
-  (window.innerWidth < 768) ? footer.style.display = 'block' : null;
-});
 
+//register links
+const registerLinks = document.querySelectorAll('.get-link');
 
+if (registerLinks.length > 0) {
+  registerLinks.forEach(item => {
+    item.setAttribute('href', item.getAttribute('href') + window.location.search);
+  });
+}
 
 
 @@include('animOnScroll.js')
